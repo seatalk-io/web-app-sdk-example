@@ -1,8 +1,7 @@
 import React, { useState, useEffect, Suspense, useRef } from 'react';
 import { Space, Switch } from 'antd';
 import { Console, Hook, Unhook } from 'console-feed';
-import { HookedConsole, Message } from 'console-feed/lib/definitions/Console';
-import { Message as ComponentMessage } from 'console-feed/lib/definitions/Component';
+import { Message } from 'console-feed/lib/definitions/Console';
 
 import './App.css';
 
@@ -20,7 +19,8 @@ const App: React.FC = () => {
       false
     );
     return () => {
-      Unhook(window.console as HookedConsole);
+      // @ts-ignore
+      Unhook(window.console);
     };
   }, []);
 
@@ -54,7 +54,8 @@ const App: React.FC = () => {
             BASE_FONT_FAMILY: `source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace`,
           }}
           variant="dark"
-          logs={logs as ComponentMessage[]}
+          // @ts-ignore
+          logs={logs}
         />
       </div>
     </>
