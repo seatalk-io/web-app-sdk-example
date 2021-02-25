@@ -12,6 +12,22 @@ const KitchenSink: React.FC = () => {
   return (
     <div style={{ padding: 20 }}>
       <section>
+        <p>
+          <Button
+            type="primary"
+            onClick={() => {
+              sdk.getSSOToken({
+                onSuccess: (token) => {
+                  console.log(token);
+                },
+              });
+            }}
+          >
+            getSSOToken
+          </Button>
+        </p>
+      </section>
+      <section>
         <Button
           type="primary"
           onClick={() => {
@@ -41,22 +57,6 @@ const KitchenSink: React.FC = () => {
         >
           showDialog
         </Button>
-      </section>
-      <section>
-        <p>
-          <Button
-            type="primary"
-            onClick={() => {
-              sdk.getSSOToken({
-                onSuccess: (token) => {
-                  console.log(token);
-                },
-              });
-            }}
-          >
-            getSSOToken
-          </Button>
-        </p>
       </section>
       <section>
         <Button
