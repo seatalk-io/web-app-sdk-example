@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/KitchenSink.css"],"names":[],"mappings":"AAAA,QACE,oBACF,CAEA,IACE,eAAgB,CAChB,gBACF","file":"4.3df54305.chunk.css","sourcesContent":["section {\n  margin-bottom: 1.5rem;\n}\n\nimg {\n  max-width: 300px;\n  max-height: 300px;\n}\n"]}
