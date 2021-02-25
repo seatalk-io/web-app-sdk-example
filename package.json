@@ -2,7 +2,7 @@
   "private": true,
   "name": "@seatalk/web-app-sdk-example",
   "version": "0.0.0",
-  "homepage": ".",
+  "homepage": "https://seatalk-io.github.io/web-app-sdk-example",
   "scripts": {
     "start": "SKIP_PREFLIGHT_CHECK=true craco start",
     "start:log": "FORCE_COLOR=true npm start | cat",
