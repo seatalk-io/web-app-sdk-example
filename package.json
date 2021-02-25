@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "example",
+  "name": "@seatalk/web-app-sdk-example",
   "version": "0.0.0",
   "homepage": ".",
   "scripts": {
