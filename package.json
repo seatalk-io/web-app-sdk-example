@@ -2,11 +2,12 @@
   "private": true,
   "name": "@seatalk/web-app-sdk-example",
   "version": "0.0.0",
-  "homepage": "https://seatalk-io.github.io/web-app-sdk-example",
+  "homepage": ".",
   "scripts": {
-    "start": "SKIP_PREFLIGHT_CHECK=true craco start",
+    "start": "craco start",
     "start:log": "FORCE_COLOR=true npm start | cat",
-    "build": "SKIP_PREFLIGHT_CHECK=true craco build"
+    "prebuild": "node scripts/homepage",
+    "build": "craco build"
   },
   "browserslist": {
     "production": [
@@ -24,6 +25,7 @@
     "@seatalk/web-app-sdk": "*",
     "antd": "^4.12.3",
     "console-feed": "^3.2.2",
+    "re-resizable": "^6.9.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },

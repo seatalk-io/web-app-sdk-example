@@ -31,7 +31,8 @@
   },
   "include": [
     "src",
-    "*.js"
+    "*.js",
+    "*/*.js"
   ],
   "exclude": [
     "node_modules",
